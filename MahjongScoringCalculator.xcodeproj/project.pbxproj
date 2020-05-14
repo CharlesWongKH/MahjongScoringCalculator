@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		512D69A5246A7629007C8924 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512D69A4246A7629007C8924 /* AppDelegate.swift */; };
+		512D69A7246A7629007C8924 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512D69A6246A7629007C8924 /* SceneDelegate.swift */; };
+		512D69A9246A7629007C8924 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512D69A8246A7629007C8924 /* ViewController.swift */; };
+		512D69AC246A7629007C8924 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 512D69AA246A7629007C8924 /* Main.storyboard */; };
+		512D69AE246A7629007C8924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 512D69AD246A7629007C8924 /* Assets.xcassets */; };
+		512D69B1246A7629007C8924 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 512D69AF246A7629007C8924 /* LaunchScreen.storyboard */; };
+		512D69BC246A762A007C8924 /* MahjongScoringCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512D69BB246A762A007C8924 /* MahjongScoringCalculatorTests.swift */; };
+		512D69C7246A762A007C8924 /* MahjongScoringCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512D69C6246A762A007C8924 /* MahjongScoringCalculatorUITests.swift */; };
+		512D69E0246A783A007C8924 /* ThresholdProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512D69DF246A783A007C8924 /* ThresholdProvider.swift */; };
+		512D69E2246A7841007C8924 /* GeometryUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512D69E1246A7841007C8924 /* GeometryUtilities.swift */; };
+		512D69E6246A79CE007C8924 /* ViewController+ARSessionHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512D69E4246A79CE007C8924 /* ViewController+ARSessionHandling.swift */; };
+		512D69E7246A79CE007C8924 /* ViewController+BoundingBoxes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512D69E5246A79CE007C8924 /* ViewController+BoundingBoxes.swift */; };
+		512D69EB246A89F8007C8924 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512D69EA246A89F8007C8924 /* ResultViewController.swift */; };
+		515E301B246DBECE00FD7FC8 /* MahJong_Object_Detector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 515E301A246DBECE00FD7FC8 /* MahJong_Object_Detector.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		512D69B8246A762A007C8924 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 512D6999246A7629007C8924 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 512D69A0246A7629007C8924;
+			remoteInfo = MahjongScoringCalculator;
+		};
+		512D69C3246A762A007C8924 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 512D6999246A7629007C8924 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 512D69A0246A7629007C8924;
+			remoteInfo = MahjongScoringCalculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		512D69A1246A7629007C8924 /* MahjongScoringCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MahjongScoringCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		512D69A4246A7629007C8924 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		512D69A6246A7629007C8924 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		512D69A8246A7629007C8924 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		512D69AB246A7629007C8924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		512D69AD246A7629007C8924 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		512D69B0246A7629007C8924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		512D69B2246A7629007C8924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		512D69B7246A762A007C8924 /* MahjongScoringCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MahjongScoringCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		512D69BB246A762A007C8924 /* MahjongScoringCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahjongScoringCalculatorTests.swift; sourceTree = "<group>"; };
+		512D69BD246A762A007C8924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		512D69C2246A762A007C8924 /* MahjongScoringCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MahjongScoringCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		512D69C6246A762A007C8924 /* MahjongScoringCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahjongScoringCalculatorUITests.swift; sourceTree = "<group>"; };
+		512D69C8246A762A007C8924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		512D69DF246A783A007C8924 /* ThresholdProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThresholdProvider.swift; path = ../ThresholdProvider.swift; sourceTree = "<group>"; };
+		512D69E1246A7841007C8924 /* GeometryUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeometryUtilities.swift; path = ../GeometryUtilities.swift; sourceTree = "<group>"; };
+		512D69E4246A79CE007C8924 /* ViewController+ARSessionHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+ARSessionHandling.swift"; sourceTree = "<group>"; };
+		512D69E5246A79CE007C8924 /* ViewController+BoundingBoxes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+BoundingBoxes.swift"; sourceTree = "<group>"; };
+		512D69EA246A89F8007C8924 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		515E301A246DBECE00FD7FC8 /* MahJong_Object_Detector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MahJong_Object_Detector.mlmodel; path = MahjongScoringCalculator/MahJong_Object_Detector.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		512D699E246A7629007C8924 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		512D69B4246A762A007C8924 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		512D69BF246A762A007C8924 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		512D6998246A7629007C8924 = {
+			isa = PBXGroup;
+			children = (
+				515E301A246DBECE00FD7FC8 /* MahJong_Object_Detector.mlmodel */,
+				512D69A3246A7629007C8924 /* MahjongScoringCalculator */,
+				512D69BA246A762A007C8924 /* MahjongScoringCalculatorTests */,
+				512D69C5246A762A007C8924 /* MahjongScoringCalculatorUITests */,
+				512D69A2246A7629007C8924 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		512D69A2246A7629007C8924 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				512D69A1246A7629007C8924 /* MahjongScoringCalculator.app */,
+				512D69B7246A762A007C8924 /* MahjongScoringCalculatorTests.xctest */,
+				512D69C2246A762A007C8924 /* MahjongScoringCalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		512D69A3246A7629007C8924 /* MahjongScoringCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				512D69E4246A79CE007C8924 /* ViewController+ARSessionHandling.swift */,
+				512D69E5246A79CE007C8924 /* ViewController+BoundingBoxes.swift */,
+				512D69A4246A7629007C8924 /* AppDelegate.swift */,
+				512D69A6246A7629007C8924 /* SceneDelegate.swift */,
+				512D69A8246A7629007C8924 /* ViewController.swift */,
+				512D69EA246A89F8007C8924 /* ResultViewController.swift */,
+				512D69AA246A7629007C8924 /* Main.storyboard */,
+				512D69AD246A7629007C8924 /* Assets.xcassets */,
+				512D69AF246A7629007C8924 /* LaunchScreen.storyboard */,
+				512D69B2246A7629007C8924 /* Info.plist */,
+				512D69E3246A786C007C8924 /* Utilities */,
+			);
+			path = MahjongScoringCalculator;
+			sourceTree = "<group>";
+		};
+		512D69BA246A762A007C8924 /* MahjongScoringCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				512D69BB246A762A007C8924 /* MahjongScoringCalculatorTests.swift */,
+				512D69BD246A762A007C8924 /* Info.plist */,
+			);
+			path = MahjongScoringCalculatorTests;
+			sourceTree = "<group>";
+		};
+		512D69C5246A762A007C8924 /* MahjongScoringCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				512D69C6246A762A007C8924 /* MahjongScoringCalculatorUITests.swift */,
+				512D69C8246A762A007C8924 /* Info.plist */,
+			);
+			path = MahjongScoringCalculatorUITests;
+			sourceTree = "<group>";
+		};
+		512D69E3246A786C007C8924 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				512D69DF246A783A007C8924 /* ThresholdProvider.swift */,
+				512D69E1246A7841007C8924 /* GeometryUtilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		512D69A0246A7629007C8924 /* MahjongScoringCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 512D69CB246A762A007C8924 /* Build configuration list for PBXNativeTarget "MahjongScoringCalculator" */;
+			buildPhases = (
+				512D699D246A7629007C8924 /* Sources */,
+				512D699E246A7629007C8924 /* Frameworks */,
+				512D699F246A7629007C8924 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MahjongScoringCalculator;
+			productName = MahjongScoringCalculator;
+			productReference = 512D69A1246A7629007C8924 /* MahjongScoringCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		512D69B6246A762A007C8924 /* MahjongScoringCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 512D69CE246A762A007C8924 /* Build configuration list for PBXNativeTarget "MahjongScoringCalculatorTests" */;
+			buildPhases = (
+				512D69B3246A762A007C8924 /* Sources */,
+				512D69B4246A762A007C8924 /* Frameworks */,
+				512D69B5246A762A007C8924 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				512D69B9246A762A007C8924 /* PBXTargetDependency */,
+			);
+			name = MahjongScoringCalculatorTests;
+			productName = MahjongScoringCalculatorTests;
+			productReference = 512D69B7246A762A007C8924 /* MahjongScoringCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		512D69C1246A762A007C8924 /* MahjongScoringCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 512D69D1246A762A007C8924 /* Build configuration list for PBXNativeTarget "MahjongScoringCalculatorUITests" */;
+			buildPhases = (
+				512D69BE246A762A007C8924 /* Sources */,
+				512D69BF246A762A007C8924 /* Frameworks */,
+				512D69C0246A762A007C8924 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				512D69C4246A762A007C8924 /* PBXTargetDependency */,
+			);
+			name = MahjongScoringCalculatorUITests;
+			productName = MahjongScoringCalculatorUITests;
+			productReference = 512D69C2246A762A007C8924 /* MahjongScoringCalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		512D6999246A7629007C8924 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Kwan Ho Wong";
+				TargetAttributes = {
+					512D69A0246A7629007C8924 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					512D69B6246A762A007C8924 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 512D69A0246A7629007C8924;
+					};
+					512D69C1246A762A007C8924 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 512D69A0246A7629007C8924;
+					};
+				};
+			};
+			buildConfigurationList = 512D699C246A7629007C8924 /* Build configuration list for PBXProject "MahjongScoringCalculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 512D6998246A7629007C8924;
+			productRefGroup = 512D69A2246A7629007C8924 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				512D69A0246A7629007C8924 /* MahjongScoringCalculator */,
+				512D69B6246A762A007C8924 /* MahjongScoringCalculatorTests */,
+				512D69C1246A762A007C8924 /* MahjongScoringCalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		512D699F246A7629007C8924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				512D69B1246A7629007C8924 /* LaunchScreen.storyboard in Resources */,
+				512D69AE246A7629007C8924 /* Assets.xcassets in Resources */,
+				512D69AC246A7629007C8924 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		512D69B5246A762A007C8924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		512D69C0246A762A007C8924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		512D699D246A7629007C8924 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				515E301B246DBECE00FD7FC8 /* MahJong_Object_Detector.mlmodel in Sources */,
+				512D69E6246A79CE007C8924 /* ViewController+ARSessionHandling.swift in Sources */,
+				512D69A9246A7629007C8924 /* ViewController.swift in Sources */,
+				512D69A5246A7629007C8924 /* AppDelegate.swift in Sources */,
+				512D69E2246A7841007C8924 /* GeometryUtilities.swift in Sources */,
+				512D69A7246A7629007C8924 /* SceneDelegate.swift in Sources */,
+				512D69E7246A79CE007C8924 /* ViewController+BoundingBoxes.swift in Sources */,
+				512D69E0246A783A007C8924 /* ThresholdProvider.swift in Sources */,
+				512D69EB246A89F8007C8924 /* ResultViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		512D69B3246A762A007C8924 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				512D69BC246A762A007C8924 /* MahjongScoringCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		512D69BE246A762A007C8924 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				512D69C7246A762A007C8924 /* MahjongScoringCalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		512D69B9246A762A007C8924 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 512D69A0246A7629007C8924 /* MahjongScoringCalculator */;
+			targetProxy = 512D69B8246A762A007C8924 /* PBXContainerItemProxy */;
+		};
+		512D69C4246A762A007C8924 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 512D69A0246A7629007C8924 /* MahjongScoringCalculator */;
+			targetProxy = 512D69C3246A762A007C8924 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		512D69AA246A7629007C8924 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				512D69AB246A7629007C8924 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		512D69AF246A7629007C8924 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				512D69B0246A7629007C8924 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		512D69C9246A762A007C8924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		512D69CA246A762A007C8924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		512D69CC246A762A007C8924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NXT35Y622;
+				INFOPLIST_FILE = MahjongScoringCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.MahjongScoringCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		512D69CD246A762A007C8924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NXT35Y622;
+				INFOPLIST_FILE = MahjongScoringCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.MahjongScoringCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		512D69CF246A762A007C8924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MahjongScoringCalculatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.MahjongScoringCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MahjongScoringCalculator.app/MahjongScoringCalculator";
+			};
+			name = Debug;
+		};
+		512D69D0246A762A007C8924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MahjongScoringCalculatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.MahjongScoringCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MahjongScoringCalculator.app/MahjongScoringCalculator";
+			};
+			name = Release;
+		};
+		512D69D2246A762A007C8924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MahjongScoringCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.MahjongScoringCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MahjongScoringCalculator;
+			};
+			name = Debug;
+		};
+		512D69D3246A762A007C8924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MahjongScoringCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.MahjongScoringCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MahjongScoringCalculator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		512D699C246A7629007C8924 /* Build configuration list for PBXProject "MahjongScoringCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				512D69C9246A762A007C8924 /* Debug */,
+				512D69CA246A762A007C8924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		512D69CB246A762A007C8924 /* Build configuration list for PBXNativeTarget "MahjongScoringCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				512D69CC246A762A007C8924 /* Debug */,
+				512D69CD246A762A007C8924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		512D69CE246A762A007C8924 /* Build configuration list for PBXNativeTarget "MahjongScoringCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				512D69CF246A762A007C8924 /* Debug */,
+				512D69D0246A762A007C8924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		512D69D1246A762A007C8924 /* Build configuration list for PBXNativeTarget "MahjongScoringCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				512D69D2246A762A007C8924 /* Debug */,
+				512D69D3246A762A007C8924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 512D6999246A7629007C8924 /* Project object */;
+}
